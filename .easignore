@@ -1,0 +1,12 @@
+# Keep the build archive small and avoid local-only files
+.vscode/
+.expo/
+node_modules/
+dist/
+web-build/
+app-example/
+.DS_Store
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.env*.local
