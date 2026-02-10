@@ -1,7 +1,6 @@
 import { Text, View,  StyleSheet, ImageSourcePropType, Platform } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Link } from 'expo-router';
-import { Image } from 'expo-image';
 import { useState, useEffect, useRef } from 'react';
 import { captureRef } from 'react-native-view-shot';
 import domtoimage from 'dom-to-image';
@@ -35,7 +34,7 @@ export default function Index() {
     if (!permissionResponse?.granted) {
       requestPermission();
     }
-  }, []);
+  }, [permissionResponse, requestPermission]);
 
   const PickerImageAsync = async () => {
     let result = await ImagePicker.launchImageLibraryAsync({

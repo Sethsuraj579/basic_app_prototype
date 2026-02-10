@@ -1,5 +1,4 @@
-import { ImageSourcePropType, View } from 'react-native';
-import { Image } from 'expo-image';
+import { ImageSourcePropType } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
 import { Gesture, GestureDetector } from 'react-native-gesture-handler';
 
